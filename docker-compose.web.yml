@@ -4,7 +4,7 @@ services:
     image: "marquezproject/marquez-web:${TAG}"
     container_name: marquez-web
     build:
-      context: .
+      context: web
       args:
         REACT_APP_ADVANCED_SEARCH: ${SEARCH_ENABLED}
     environment:
